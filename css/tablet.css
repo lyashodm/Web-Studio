@@ -1,0 +1,81 @@
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 582px;
+  }
+
+  .hero {
+    padding-bottom: 108px;
+
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/tablet-bg-1x-min.jpg);
+  }
+
+  .hero-title {
+    margin-bottom: 40px;
+
+    font-size: 56px;
+    line-height: 1.07;
+  }
+
+  .advantages > .container {
+    max-width: 766px;
+  }
+
+  .advantages-list {
+    column-gap: 24px;
+  }
+
+  .advantages-item {
+    max-width: 356px;
+    width: calc((100% - 24px) / 2);
+  }
+
+  .team {
+    padding-bottom: 104px;
+  }
+  .team > .container {
+    max-width: 582px;
+  }
+  .team-item {
+    max-width: 264px;
+    width: calc((100%-48px) / 2);
+  }
+
+  .team-list {
+    column-gap: 24px;
+    row-gap: 64px;
+  }
+
+  .customers-list {
+    column-gap: 24px;
+  }
+
+  .customers-item {
+    width: calc((100% - 48px) / 3);
+    height: 90px;
+  }
+
+  .footer {
+    text-align: left;
+  }
+
+  .footer-container {
+    justify-content: start;
+    column-gap: 24px;
+  }
+
+  .footer-subscription-input {
+    min-width: 264px;
+  }
+
+  .footer-subscription-wrap {
+    flex-wrap: nowrap;
+  }
+
+  /*---------------------------------------------------------------*/
+  /*------------------------------PORTFOLIO------------------------------*/
+  /*---------------------------------------------------------------*/
+}
