@@ -46,7 +46,6 @@ body {
   color: var(--primary-color);
   font-size: 16px;
   background-color: var(--white-color);
-  padding-top: 73px;
 }
 
 .container {
@@ -103,13 +102,12 @@ body {
 
 /*------------------------------HEADER------------------------------*/
 .header {
-  position: fixed;
+  padding: 24px 0;
   top: 0;
   width: 100%;
 
   border-bottom: 1px solid #e7e9fc;
   background-color: var(--white-color);
-  z-index: 1;
 }
 
 .header-container {
@@ -142,70 +140,18 @@ body {
 }
 
 .header-list {
-  display: flex;
-  gap: 40px;
-}
-.header-item {
+  display: none;
 }
 
-.header-link {
-  position: relative;
-  display: inline-block;
-  padding: 24px 0;
-  height: 100%;
-
-  font-weight: 500;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  color: var(--secondary-color);
-
-  transition: color var(--main-transition);
+.header-adress {
+  display: none;
 }
-
-.header-link:hover,
-.header-link:focus,
-.header-link.current {
-  color: var(--hover-color);
+.mobile-menu-btn {
+  border: none;
+  background-color: inherit;
 }
-
-.header-link::after {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-
-  content: '';
-  width: 100%;
-  height: 4px;
-  background-color: var(--hover-color);
-  border-radius: 2px;
-  transform: scaleX(0);
-
-  transition: transform var(--main-transition);
-}
-
-.header-link:hover::after,
-.header-link:focus::after,
-.header-link.current::after {
-  transform: scaleX(1);
-}
-
-.header-adress-list {
-  display: flex;
-  gap: 40px;
-}
-
-.header-adress-item {
-}
-
-.header-adress-link {
-  line-height: 1.5;
-  color: var(--primary-color);
-  transition: color var(--main-transition);
-}
-
-.header-adress-link:hover,
-.header-adress-link:focus {
-  color: var(--hover-color);
+.mobile-menu-icon {
+  stroke: var(--secondary-color);
 }
 
 /*------------------------------HERO-SECTION------------------------------*/
@@ -226,6 +172,19 @@ body {
   background-position: center;
   background-size: cover;
   max-width: 1440px;
+}
+
+@media (min-device-pixel-ratio: 2),
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/mobile-bg-2x-min.jpg);
+  }
 }
 
 .hero-title {
@@ -384,7 +343,7 @@ body {
   flex-wrap: wrap;
 }
 .customers-item {
-  width: calc((100% - 32px) / 2);
+  width: calc((100% - 16px) / 2);
   height: 90px;
 }
 .customers-link {

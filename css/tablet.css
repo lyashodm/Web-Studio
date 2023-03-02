@@ -3,6 +3,81 @@
     max-width: 582px;
   }
 
+  /*------------------------------HEADER------------------------------*/
+
+  .header-list {
+    display: flex;
+    gap: 40px;
+  }
+  .header-item {
+  }
+
+  .header-link {
+    position: relative;
+    display: inline-block;
+    padding: 24px 0;
+    height: 100%;
+
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--secondary-color);
+
+    transition: color var(--main-transition);
+  }
+
+  .header-link:hover,
+  .header-link:focus,
+  .header-link.current {
+    color: var(--hover-color);
+  }
+
+  .header-link::after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    content: '';
+    width: 100%;
+    height: 4px;
+    background-color: var(--hover-color);
+    border-radius: 2px;
+    transform: scaleX(0);
+
+    transition: transform var(--main-transition);
+  }
+
+  .header-link:hover::after,
+  .header-link:focus::after,
+  .header-link.current::after {
+    transform: scaleX(1);
+  }
+
+  .header-adress {
+    display: block;
+  }
+
+  .header-adress-list {
+    display: flex;
+    gap: 40px;
+  }
+
+  .header-adress-item {
+  }
+
+  .header-adress-link {
+    line-height: 1.5;
+    color: var(--primary-color);
+    transition: color var(--main-transition);
+  }
+
+  .header-adress-link:hover,
+  .header-adress-link:focus {
+    color: var(--hover-color);
+  }
+
+  /*------------------------------HERO-SECTION------------------------------*/
+
   .hero {
     padding-bottom: 108px;
 
@@ -11,6 +86,19 @@
         rgba(46, 47, 66, 0.7)
       ),
       url(../images/tablet-bg-1x-min.jpg);
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/tablet-bg-2x-min.jpg);
+    }
   }
 
   .hero-title {
@@ -41,7 +129,7 @@
   }
   .team-item {
     max-width: 264px;
-    width: calc((100%-48px) / 2);
+    width: calc((100%-24px) / 2);
   }
 
   .team-list {
