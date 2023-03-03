@@ -20,7 +20,7 @@
 </head>
 
 <body>
-    <!-- <header class="header">
+    <header class="header">
         <div class="container header-container">
             <nav class="header-navigation">
                 <a href="./index.html" class="header-logo logo link"><span class="logo-web">WEB</span>STUDIO</a>
@@ -32,7 +32,7 @@
                     <li class="header-item"><a href="" class="header-link link">Contacts</a></li>
                 </ul>
             </nav>
-            <address>
+            <address class="header-adress">
                 <ul class="header-adress-list list">
                     <li class="header-adress-item"><a href="mailto:info@devstudio.com"
                             class="header-adress-link link">info@devstudio.com</a></li>
@@ -41,7 +41,7 @@
                 </ul>
             </address>
         </div>
-    </header> -->
+    </header>
     <main>
         <section class="works">
             <div class="container">
@@ -58,8 +58,19 @@
                     <li class="works-card-item">
                         <a href="" class="works-card-link link">
                             <div class="works-card-cover-wrap">
-                                <img src="./images/banking-app-interface-concept.jpg"
-                                    alt="Banking App Interface Concept" width="360">
+                                <picture>
+                                    <source
+                                        srcset="./images/banking-app-interface-concept.jpg 1x , ./images/banking-desktop-2x-min.jpg 2x"
+                                        media="(min-width:1200px)">
+                                    <source
+                                        srcset="./images/banking-tablet-1x-min.jpg 1x , ./images/banking-tablet-2x-min.jpg 2x"
+                                        media=" (min-width:768px)">
+                                    <source
+                                        srcset="./images/banking-mobile-1x-min.jpg 1x , ./images/banking-mobile-2x-min.jpg 2x"
+                                        media="(max-width:767px)">
+                                    <img src="./images/banking-app-interface-concept.jpg"
+                                        alt="Banking App Interface Concept">
+                                </picture>
                                 <p class="works-card-cover-text">
                                     14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie
                                     Tracker
@@ -76,7 +87,18 @@
                     <li class="works-card-item">
                         <a href="" class="works-card-link link">
                             <div class="works-card-cover-wrap">
-                                <img src="./images/cashless-payment.jpg" alt="Cashless Payment" width="360">
+                                <picture>
+                                    <source
+                                        srcset="./images/cashless-payment.jpg 1x , ./images/cashless-desktop-2x-min.jpg 2x"
+                                        media="(min-width:1200px)">
+                                    <source
+                                        srcset="./images/cashless-tablet-1x-min.jpg 1x , ./images/cashless-tablet-2x-min.jpg 2x"
+                                        media=" (min-width:768px)">
+                                    <source
+                                        srcset="./images/cashless-mobile-1x-min.jpg 1x , ./images/cashless-mobile-2x-min.jpg 2x"
+                                        media="(max-width:767px)">
+                                    <img src="./images/cashless-payment.jpg" alt="Cashless Payment">
+                                </picture>
                                 <p class="works-card-cover-text">
                                     14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie
                                     Tracker
@@ -93,7 +115,18 @@
                     <li class="works-card-item">
                         <a href="" class="works-card-link link">
                             <div class="works-card-cover-wrap">
-                                <img src="./images/meditaion-app.jpg" alt="Meditaion App" width="360">
+                                <picture>
+                                    <source
+                                        srcset="./images/meditaion-app.jpg 1x , ./images/meditaion-desktop-2x-min.jpg 2x"
+                                        media="(min-width:1200px)">
+                                    <source
+                                        srcset="./images/meditaion-tablet-1x-min.jpg 1x , ./images/meditaion-tablet-2x-min.jpg 2x"
+                                        media="(min-width:768px)">
+                                    <source
+                                        srcset="./images/meditaion-mobile-1x-min.jpg 1x , ./images/meditaion-mobile-2x-min.jpg 2x"
+                                        media="(max-width:767px)">
+                                    <img src="./images/meditaion-app.jpg" alt="Meditaion App">
+                                </picture>
                                 <p class="works-card-cover-text">
                                     14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie
                                     Tracker
@@ -110,7 +143,17 @@
                     <li class="works-card-item">
                         <a href="" class="works-card-link link">
                             <div class="works-card-cover-wrap">
-                                <img src="./images/taxi-service.jpg" alt="Taxi Service" width="360">
+                                <picture>
+                                    <source srcset="./images/taxi-service.jpg 1x , ./images/taxi-desktop-2x-min.jpg 2x"
+                                        media="(min-width:1200px)">
+                                    <source
+                                        srcset="./images/taxi-tablet-1x-min.jpg 1x , ./images/taxi-tablet-2x-min.jpg 2x"
+                                        media="(min-width:768px)">
+                                    <source
+                                        srcset="./images/taxi-mobile-1x-min.jpg 1x , ./images/taxi-mobile-2x-min.jpg 2x"
+                                        media="(max-width:767px)">
+                                    <img src="./images/taxi-service.jpg" alt="Taxi Service">
+                                </picture>
                                 <p class="works-card-cover-text">
                                     14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie
                                     Tracker
@@ -127,7 +170,18 @@
                     <li class="works-card-item">
                         <a href="" class="works-card-link link">
                             <div class="works-card-cover-wrap">
-                                <img src="./images/screen-illustrations.jpg" alt="Screen Illustrations" width="360">
+                                <picture>
+                                    <source
+                                        srcset="./images/screen-illustrations.jpg 1x , ./images/screen-desktop-2x-min.jpg 2x"
+                                        media="(min-width:1200px)">
+                                    <source
+                                        srcset="./images/screen-tablet-1x-min.jpg 1x , ./images/screen-tablet-2x-min.jpg 2x"
+                                        media="(min-width:768px)">
+                                    <source
+                                        srcset="./images/screen-mobile-1x-min.jpg 1x , ./images/screen-mobile-2x-min.jpg 2x"
+                                        media="(max-width:767px)">
+                                    <img src="./images/screen-illustrations.jpg" alt="Screen Illustrations">
+                                </picture>
                                 <p class="works-card-cover-text">
                                     14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie
                                     Tracker
@@ -144,7 +198,18 @@
                     <li class="works-card-item">
                         <a href="" class="works-card-link link">
                             <div class="works-card-cover-wrap">
-                                <img src="./images/online-courses.jpg" alt="Online Courses" width="360">
+                                <picture>
+                                    <source
+                                        srcset="./images/online-courses.jpg 1x , ./images/online-desktop-2x-min.jpg 2x"
+                                        media="(min-width:1200px)">
+                                    <source
+                                        srcset="./images/online-tablet-1x-min.jpg 1x , ./images/online-tablet-2x-min.jpg 2x"
+                                        media="(min-width:768px)">
+                                    <source
+                                        srcset="./images/online-mobile-1x-min.jpg 1x , ./images/online-mobile-2x-min.jpg 2x"
+                                        media="(max-width:767px)">
+                                    <img src="./images/online-courses.jpg" alt="Online Courses">
+                                </picture>
                                 <p class="works-card-cover-text">
                                     14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie
                                     Tracker
@@ -161,8 +226,18 @@
                     <li class="works-card-item">
                         <a href="" class="works-card-link link">
                             <div class="works-card-cover-wrap">
-                                <img src="./images/instagram-stories-concept.jpg" alt="Instagram Stories Concept"
-                                    width="360">
+                                <picture>
+                                    <source
+                                        srcset="./images/instagram-stories-concept.jpg 1x , ./images/instagram-desktop-2x-min.jpg 2x"
+                                        media="(min-width:1200px)">
+                                    <source
+                                        srcset="./images/instagram-tablet-1x-min.jpg 1x , ./images/instagram-tablet-2x-min.jpg 2x"
+                                        media="(min-width:768px)">
+                                    <source
+                                        srcset="./images/instagram-mobile-1x-min.jpg 1x , ./images/instagram-mobile-2x-min.jpg 2x"
+                                        media="(max-width:767px)">
+                                    <img src="./images/instagram-stories-concept.jpg" alt="Instagram Stories Concept">
+                                </picture>
                                 <p class="works-card-cover-text">
                                     14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie
                                     Tracker
@@ -179,7 +254,18 @@
                     <li class="works-card-item">
                         <a href="" class="works-card-link link">
                             <div class="works-card-cover-wrap">
-                                <img src="./images/organic-food.jpg" alt="Organic Food" width="360">
+                                <picture>
+                                    <source
+                                        srcset="./images/organic-food.jpg 1x , ./images/organic-desktop-2x-min.jpg 2x"
+                                        media="(min-width:1200px)">
+                                    <source
+                                        srcset="./images/organic-tablet-1x-min.jpg 1x , ./images/organic-tablet-2x-min.jpg 2x"
+                                        media="(min-width:768px)">
+                                    <source
+                                        srcset="./images/organic-mobile-1x-min.jpg 1x , ./images/organic-mobile-2x-min.jpg 2x"
+                                        media="(max-width:767px)">
+                                    <img src="./images/organic-food.jpg" alt="Organic Food">
+                                </picture>
                                 <p class="works-card-cover-text">
                                     14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie
                                     Tracker
@@ -196,7 +282,18 @@
                     <li class="works-card-item">
                         <a href="" class="works-card-link link">
                             <div class="works-card-cover-wrap">
-                                <img src="./images/fresh-coffee.jpg" alt="Fresh Coffee" width="360">
+                                <picture>
+                                    <source
+                                        srcset="./images/fresh-coffee.jpg 1x , ./images/coffee-desktop-2x-min.jpg 2x"
+                                        media="(min-width:1200px)">
+                                    <source
+                                        srcset="./images/coffee-tablet-1x-min.jpg 1x , ./images/coffee-tablet-2x-min.jpg 2x"
+                                        media="(min-width:768px)">
+                                    <source
+                                        srcset="./images/coffee-mobile-1x-min.jpg 1x , ./images/coffee-mobile-2x-min.jpg 2x"
+                                        media="(max-width:767px)">
+                                    <img src="./images/fresh-coffee.jpg" alt="Fresh Coffee">
+                                </picture>
                                 <p class="works-card-cover-text">
                                     14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie
                                     Tracker
