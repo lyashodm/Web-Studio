@@ -78,10 +78,13 @@
     color: var(--hover-color);
   }
 
-  .mobile-menu-btn {
+  .mobile-menu-open-btn {
     display: none;
   }
-
+  /*-----------------------------------------------------------------------*/
+  .mobile-menu {
+    display: none;
+  }
   /*------------------------------HERO-SECTION------------------------------*/
 
   .hero {
