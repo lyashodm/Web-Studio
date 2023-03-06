@@ -67,6 +67,10 @@
     display: block;
   }
 
+  .header-adress-item:not(:last-child) {
+    margin-bottom: 6px;
+  }
+
   .header-adress-link {
     font-size: 12px;
     color: var(--primary-color);
